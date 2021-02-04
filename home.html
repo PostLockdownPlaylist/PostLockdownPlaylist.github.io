@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Post Lockdown Playlist</title>
-	<script type="text/javascript" src="./JavaScript/main.js"></script>
+	<script type="text/javascript" src="./JavaScript/token.js"></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
-<body onload="getToken()">
-	<h1>Successfully redirected to home!</h1>
+
+<body onload="initTokenSequence()"> <!-- runs the function initTokenSequence once the page has loaded -->
+	<div id="nav-bar" class="nav-bar">
+		<div id="navContents" class="navContents">
+			<a href="./playlist.html">Playlist</a>
+			<a href="./addSong.html">Add Song</a>
+		</div>
+	</div>
+
+	<h1 style="margin-top: 100px; text-align: center;">Welcome!</h1>
+
 </body>
+
 </html>
