@@ -6,10 +6,11 @@ const currentToken = localStorage.getItem('token');
 
 
 const setLoginURL = () => {
-    const scope = 'playlist-modify-public';
+    const scope = 'playlist-modify-public playlist-modify-private';
+    const scopeURI = encodeURI(scope);
     const redirectURL = 'https://postlockdownplaylist.github.io/home'
     const redirectURI = encodeURI(redirectURL);
-    const loginURL = `https://accounts.spotify.com/en/authorize?client_id=${clientId}&redirect_uri=${redirectURI}&scope=${scope}&response_type=token`;
+    const loginURL = `https://accounts.spotify.com/en/authorize?client_id=${clientId}&redirect_uri=${redirectURI}&scope=${scopeURI}&response_type=token`;
     const begin = document.getElementById('begin');
     begin.href = loginURL;
     console.log(loginURL);
