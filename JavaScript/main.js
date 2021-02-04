@@ -13,7 +13,7 @@ const initPage = () => {
 const setLoginURL = () => {
     const scope = 'playlist-modify-public';
     // const redirectURL = 'https://thomasvirgo.github.io/';
-    const redirectURL = 'https://postlockdownplaylist.github.io/'
+    const redirectURL = 'https://postlockdownplaylist.github.io/home'
     const redirectURI = encodeURI(redirectURL);
     const loginURL = `https://accounts.spotify.com/en/authorize?client_id=${clientId}&redirect_uri=${redirectURI}&scope=${scope}&response_type=token`;
     const begin = document.getElementById('begin');
