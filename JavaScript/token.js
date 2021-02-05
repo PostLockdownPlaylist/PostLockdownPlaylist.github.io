@@ -1,5 +1,5 @@
 const initTokenSequence = () => {
-	console.log('initiated')
+	console.log('initiated');
 	const token = getToken();
 	localStorage.setItem('token', token);
 }
